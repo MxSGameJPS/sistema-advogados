@@ -1,7 +1,6 @@
 # MaisDireito Advogados - Website e Painéis Administrativos
 
-<div align="center">
-  <img src="./public/logo.png" alt="MaisDireito Advogados Logo" width="200"/>
+
   <br><br>
   
   [![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)](https://nextjs.org/)
