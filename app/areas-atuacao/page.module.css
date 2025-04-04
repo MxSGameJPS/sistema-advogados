@@ -1,0 +1,211 @@
+.pageContainer {
+  padding-top: 80px;
+}
+
+.hero {
+  background-color: var(--color-primary);
+  color: var(--color-text-light);
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--color-accent);
+}
+
+.divider {
+  width: 80px;
+  height: 3px;
+  background-color: var(--color-accent);
+  margin: 0 auto 1.5rem;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto;
+  color: var(--color-text-muted);
+}
+
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+}
+
+.introduction {
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.introduction h2 {
+  font-size: 2rem;
+  color: var(--color-primary);
+  margin-bottom: 1rem;
+}
+
+.introduction p {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #444;
+}
+
+.areasGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.areaCard {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.areaCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.areaHeader {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.areaIcon {
+  width: 50px;
+  height: 50px;
+  background-color: var(--color-primary-light);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  margin-right: 1rem;
+  color: var(--color-accent);
+}
+
+.areaTitle {
+  font-size: 1.4rem;
+  color: var(--color-primary);
+  margin: 0;
+}
+
+.areaDescription {
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+}
+
+.areaServices {
+  margin-top: auto;
+  padding-top: 1rem;
+  border-top: 1px solid #eee;
+}
+
+.areaServices h4 {
+  color: var(--color-primary);
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.areaServices ul {
+  padding-left: 1.2rem;
+  margin: 0;
+}
+
+.areaServices li {
+  margin-bottom: 0.5rem;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.callToAction {
+  background-color: var(--color-primary-light);
+  padding: 3rem;
+  border-radius: 12px;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.callToAction h2 {
+  color: var(--color-accent);
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.callToAction p {
+  max-width: 700px;
+  margin: 0 auto 2rem;
+  font-size: 1.1rem;
+  color: var(--color-text-light);
+}
+
+.button {
+  display: inline-block;
+  padding: 12px 28px;
+  background-color: var(--color-accent);
+  color: var(--color-primary-dark);
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: var(--color-accent-dark);
+}
+
+/* Responsividade */
+@media (max-width: 992px) {
+  .areasGrid {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 3rem 1.5rem;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .areasGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .callToAction {
+    padding: 2rem 1.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .areaHeader {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .areaIcon {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+
+  .introduction h2 {
+    font-size: 1.6rem;
+  }
+}

@@ -1,0 +1,148 @@
+.footer {
+  background-color: var(--color-primary-dark);
+  color: var(--color-text-light);
+  padding: 4rem 0 2rem;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 3rem;
+  margin-bottom: 3rem;
+}
+
+.section h3 {
+  font-size: 1.2rem;
+  color: var(--color-accent);
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.section h3::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 40px;
+  height: 2px;
+  background-color: var(--color-accent);
+}
+
+.about {
+  line-height: 1.6;
+}
+
+.about p {
+  margin-bottom: 1.5rem;
+  color: var(--color-text-muted);
+}
+
+.social {
+  display: flex;
+  gap: 1rem;
+}
+
+.socialLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(212, 170, 61, 0.1);
+  border-radius: 50%;
+  color: var(--color-accent);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.socialLink:hover {
+  background-color: var(--color-accent);
+  color: var(--color-primary-dark);
+}
+
+.links ul,
+.contact ul {
+  list-style: none;
+  padding: 0;
+}
+
+.links li,
+.contact li {
+  margin-bottom: 1rem;
+}
+
+.links a,
+.contact a {
+  color: var(--color-text-muted);
+  text-decoration: none;
+  transition: color 0.3s ease;
+  display: inline-block;
+  padding: 0.2rem 0;
+  position: relative;
+}
+
+.links a::after,
+.contact a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 1px;
+  background-color: var(--color-accent);
+  transition: width 0.3s ease;
+}
+
+.links a:hover,
+.contact a:hover {
+  color: var(--color-accent);
+}
+
+.links a:hover::after,
+.contact a:hover::after {
+  width: 100%;
+}
+
+.contact li {
+  display: flex;
+  align-items: flex-start;
+}
+
+.contactIcon {
+  margin-right: 0.8rem;
+  color: var(--color-accent);
+  font-size: 1.2rem;
+  margin-top: 0.2rem;
+}
+
+.bottomBar {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 2rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 3rem 0 2rem;
+  }
+
+  .content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .section h3 {
+    margin-bottom: 1.2rem;
+  }
+
+  .section h3::after {
+    bottom: -8px;
+  }
+}
