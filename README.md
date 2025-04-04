@@ -193,7 +193,7 @@ yarn start
 
 ## 📄 Licença
 
-Este projeto é propriedade de MaisDireito Advogados e seu uso não autorizado é proibido.
+Este projeto é propriedade de Saulo Pavanello e seu uso não autorizado é proibido.
 
 ## 📞 Contato
 
