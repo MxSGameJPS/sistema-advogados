@@ -1,0 +1,124 @@
+.loginContainer {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-primary-light);
+  padding: 2rem;
+}
+
+.loginCard {
+  width: 100%;
+  max-width: 400px;
+  background-color: var(--color-background-light);
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.logoContainer {
+  background-color: var(--color-primary);
+  padding: 2rem;
+  text-align: center;
+  color: var(--color-text-light);
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: var(--color-accent);
+}
+
+.subtitle {
+  font-size: 1rem;
+  opacity: 0.8;
+}
+
+.loginForm {
+  padding: 2rem;
+}
+
+.formGroup {
+  margin-bottom: 1.5rem;
+}
+
+.formGroup label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: var(--color-text-dark);
+}
+
+.formGroup input {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #f5f5f5;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.formGroup input:focus {
+  border-color: var(--color-accent);
+  box-shadow: 0 0 0 2px rgba(212, 170, 61, 0.2);
+  outline: none;
+}
+
+.loginButton {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: var(--color-accent);
+  color: var(--color-primary-dark);
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.loginButton:hover {
+  background-color: var(--color-accent-dark);
+  transform: translateY(-2px);
+}
+
+.loginButton:active {
+  transform: translateY(0);
+}
+
+.errorMessage {
+  background-color: rgba(255, 0, 0, 0.1);
+  color: #d32f2f;
+  padding: 0.75rem;
+  border-radius: 4px;
+  margin-bottom: 1.5rem;
+  font-size: 0.9rem;
+}
+
+.footer {
+  padding: 1.5rem 2rem;
+  background-color: #f5f5f5;
+  text-align: center;
+  border-top: 1px solid #e0e0e0;
+}
+
+.backToSite {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  color: var(--color-accent);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.backToSite:hover {
+  color: var(--color-accent-dark);
+  text-decoration: underline;
+}
+
+.copyright {
+  font-size: 0.8rem;
+  color: #777;
+} 
